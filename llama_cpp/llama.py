@@ -734,6 +734,9 @@ class Llama:
             id=id,
             apply_grammar=grammar is not None,
         )
+
+        self.token_data_array = self._ctx.get_token_data_array()#JW
+
         return id
 
     def generate(
