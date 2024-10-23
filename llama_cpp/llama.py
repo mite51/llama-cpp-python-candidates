@@ -735,7 +735,7 @@ class Llama:
             apply_grammar=grammar is not None,
         )
 
-        self.token_data_array = self._ctx.get_token_data_array()#JW
+        self.token_data_array = sampling_context.get_token_data_array()#JW
 
         return id
 
